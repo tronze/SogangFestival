@@ -19,7 +19,7 @@ SETTING_JSON = os.path.join(os.path.dirname(os.path.abspath(__file__)), "setting
 
 setting_data = None
 with open(SETTING_JSON, "r") as fp:
-    setting_data = json.loads(fp)
+    setting_data = json.load(fp)
 
 
 # Quick-start development settings - unsuitable for production
